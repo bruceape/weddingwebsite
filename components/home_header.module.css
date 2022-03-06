@@ -1,4 +1,24 @@
 
 .container {
-	background: red;
+	/*background: red;*/
 }
+
+.title {
+	font-size: 18px;
+	line-height: 18px;
+
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.name::before {
+	content: "\a";
+    white-space: pre;
+}
+
+.name {
+	font-size: 36px;
+	line-height: 48px;
+}
+

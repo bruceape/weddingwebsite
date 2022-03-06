@@ -4,11 +4,14 @@ import styles from './home_reception.module.css'
 export default function HomeReception({ children }) {
 	return (
 		<div className={styles.container}>
-			Reception
-			Saturday, May 28
-			Foreign Cinema
-			6:30 PM PT
-
+			<h3 className={`${styles.title} neue-haas-italic`}>
+				Reception
+			</h3>
+			<ul className={`${styles.times} neue-haas-regular`}>
+				<li>Foreign Cinema</li>
+				<li><time datetime="2022-28-05">Saturday, May 28</time></li>
+				<li><time datetime="18:30">6:30 PM PT</time></li>
+			</ul>
 		</div>
 	)
 }

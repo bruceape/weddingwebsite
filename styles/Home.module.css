@@ -1,7 +1,24 @@
 .container {
-  padding: 0 2rem;
+  background: #EDEDED;
+  padding: 24px;
+
+  min-height: calc(100vh - env(safe-area-inset-bottom));
+
+  display: grid;
+  row-gap: 64px;
+  /*flex-direction: column;*/
+  /*justify-content: space-between;*/
 }
 
+.description {
+  display: grid;  
+  row-gap: 48px;
+}
+
+
+
+
+/*
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -114,3 +131,4 @@
     flex-direction: column;
   }
 }
+*/

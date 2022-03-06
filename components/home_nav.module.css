@@ -1,4 +1,30 @@
 
 .container {
-	background: blue;
+	/*background: blue;*/
+}
+
+.list {
+	display: grid;
+	row-gap: 9px;
+}
+
+.listItem {
+	/*background: white;*/
+}
+
+
+.link, .link:link, .link:visited {
+	/*background: red;*/
+	text-decoration: underline;
+	color: #595959;
+
+	font-size: 14px;
+	line-height: 28px;
+
+	display: inline-block;
+}
+
+.link:hover, .link:active {
+	/*background: blue;*/
+	color: black;
 }

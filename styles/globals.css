@@ -62,8 +62,44 @@ a {
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/*:root {
+  font-size: 10px;
+}*/
 
 .hidden {
   display: none;
+}
+
+.garamond-italic {
+  font-family: garamond-premier-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.garamond-regular {
+  font-family: garamond-premier-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*.garamond-display-italic {
+  font-family: garamond-premier-pro-display, serif;
+  font-weight: 400;
+  font-style: italic;
+}*/
+
+.neue-haas-regular {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.neue-haas-italic {
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
