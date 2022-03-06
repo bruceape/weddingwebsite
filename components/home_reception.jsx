@@ -9,8 +9,8 @@ export default function HomeReception({ children }) {
 			</h3>
 			<ul className={`${styles.times} neue-haas-regular`}>
 				<li>Foreign Cinema</li>
-				<li><time datetime="2022-28-05">Saturday, May 28</time></li>
-				<li><time datetime="18:30">6:30 PM PT</time></li>
+				<li><time dateTime="2022-28-05">Saturday, May 28</time></li>
+				<li><time dateTime="18:30">6:30 PM PT</time></li>
 			</ul>
 		</div>
 	)
