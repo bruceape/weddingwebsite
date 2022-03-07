@@ -51,6 +51,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: #EDEDED;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -85,12 +86,6 @@ a {
   font-weight: 400;
   font-style: normal;
 }
-
-/*.garamond-display-italic {
-  font-family: garamond-premier-pro-display, serif;
-  font-weight: 400;
-  font-style: italic;
-}*/
 
 .neue-haas-regular {
   font-family: neue-haas-grotesk-text, sans-serif;
