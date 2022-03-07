@@ -5,15 +5,17 @@ function Item( {time, title, description, detailsDescription, details }) {
   detailsDescription = detailsDescription || ''
   let descItems = detailsDescription
     .split('\n')
-    .map((i) =>
-      <p className={styles.detailsDescription}>
+    .map((i, idx) =>
+      <p
+        key={idx} 
+        className={styles.detailsDescription}>
         {i}
       </p>
     )
 
   details = details || []
-  let detailItems = details.map((d) =>
-    <li className={styles.detailsItem}>
+  let detailItems = details.map((d, idx) =>
+    <li className={styles.detailsItem} key={idx}>
       <span className={styles.detailsHighlight}>
         {d.title}:
       </span>
@@ -57,7 +59,7 @@ function Divider() {
 function Section({ data }) {
   const count = data.items.length
   const items = data.items.map((i, idx) =>
-    <>
+    <fragment key={i.title}>
       <Item
         title={i.title}
         time={i.time}
@@ -65,8 +67,8 @@ function Section({ data }) {
         detailsDescription={i.detailsDescription}
         details={i.details}
       />
-      {idx < count - 1 ? <Divider /> : <></>}
-    </>
+      {idx < count - 1 ? <Divider key={`${idx}-div`} /> : <></>}
+    </fragment>
   )
 
   return (
@@ -171,7 +173,7 @@ export default function Schedule() {
         Schedule
 
         <div className={styles.sectionList}>
-          {schedule.map((a) => <Section data={a} />)}
+          {schedule.map((a) => <Section key={a.title} data={a} />)}
         </div>
       </div>
     )
