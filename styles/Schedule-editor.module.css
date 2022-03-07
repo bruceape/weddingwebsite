@@ -1,0 +1,17 @@
+
+.container {
+  /*background: red;*/
+  padding: 24px 24px 96px 24px;
+
+  display: grid;
+  row-gap: 32px;
+}
+
+
+.scheduleList {
+
+}
+
+.addButton {
+  margin-top: 8px;
+}
