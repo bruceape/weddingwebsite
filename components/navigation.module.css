@@ -1,4 +1,73 @@
 
 .container {
-	background: orange;
+	/*background: orange;*/
+
+	/*padding: 48px 24px;*/
 }
+
+.locked {
+	/*min-height: calc(100vh - env(safe-area-inset-bottom));*/
+	height: 100vh;
+}
+
+.header {
+	display: flex;
+	/*background: red;*/
+}
+
+.heading {
+	font-size: 18px;
+	line-height: 18px;
+	/* identical to box height, or 100% */
+
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+
+	flex: 1 1 auto;
+}
+
+.menuBtn {
+	/*background: blue;*/
+}
+
+
+.sheet {
+	background: #F2F2F2;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	height: 100vh;
+	width: 100%;
+
+	padding: 48px 24px;
+}
+
+.hidden {
+	display: none;
+}
+
+.menuList {
+	padding: 24px 0;
+	display: grid;
+
+	row-gap: 12px;
+}
+
+.menuLink, .menuLink:link, .menuLink:visited {
+	/*background: orange;*/
+	display: block;
+	padding: 8px 0px;
+
+	text-decoration: underline;
+}
+
+
+.menuLink:hover, .menuLink:active {
+	color: #595959;
+}
+
+

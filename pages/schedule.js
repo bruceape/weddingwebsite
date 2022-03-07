@@ -169,9 +169,7 @@ const schedule = [{
 export default function Schedule() {
     return (
       <div className={styles.container}>
-        <Navigation />
-
-        Schedule
+        <Navigation currentPage="Schedule & Details" />
 
         <div className={styles.sectionList}>
           {schedule.map((a) => <Section key={a.title} data={a} />)}

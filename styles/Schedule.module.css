@@ -1,7 +1,7 @@
 
 .container {
   background: #EDEDED;
-  padding: 24px 24px 96px 24px;
+  padding: 48px 24px 96px 24px;
 
   /*min-height: calc(100vh - env(safe-area-inset-bottom));*/
 
