@@ -1,3 +1,4 @@
+import React from 'react';
 import Navigation from '../components/navigation'
 import styles from '../styles/Schedule.module.css'
 
@@ -59,7 +60,7 @@ function Divider() {
 function Section({ data }) {
   const count = data.items.length
   const items = data.items.map((i, idx) =>
-    <fragment key={i.title}>
+    <React.Fragment key={i.title}>
       <Item
         title={i.title}
         time={i.time}
@@ -67,8 +68,8 @@ function Section({ data }) {
         detailsDescription={i.detailsDescription}
         details={i.details}
       />
-      {idx < count - 1 ? <Divider key={`${idx}-div`} /> : <></>}
-    </fragment>
+      {idx < count - 1 ? <Divider /> : <></>}
+    </React.Fragment>
   )
 
   return (
