@@ -3,10 +3,14 @@ import HomeHeader from '../components/home_header'
 import HomeCeremony from '../components/home_ceremony'
 import HomeReception from '../components/home_reception'
 import HomeNav from '../components/home_nav'
+import React from 'react'
+import { Context } from '../components/AppStateProvider'
 
 export default function Home() {
+    const { state } = React.useContext(Context)
+    const modalOpen =  !state.menuOpen ? '' : 'locked'
     return (
-      <div className={styles.container}>
+      <div className= {`${styles.container} ${modalOpen}`}>
         <HomeHeader />
         <div className={styles.description}>
           <HomeCeremony />

@@ -1,6 +1,7 @@
-import React from 'react';
 import Navigation from '../components/navigation'
 import styles from '../styles/Schedule.module.css'
+import React from 'react';
+import { Context } from '../components/AppStateProvider'
 
 function Item( {time, title, description, detailsDescription, details }) {
   detailsDescription = detailsDescription || ''
@@ -167,8 +168,11 @@ const schedule = [{
 ]
 
 export default function Schedule() {
+  const { state } = React.useContext(Context)
+  const modalOpen =  !state.menuOpen ? '' : 'locked'
+
     return (
-      <div className={styles.container}>
+      <div className={`${styles.container} ${modalOpen}`}>
         <Navigation currentPage="Schedule & Details" />
 
         <div className={styles.sectionList}>

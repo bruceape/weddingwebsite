@@ -15,7 +15,9 @@
   row-gap: 48px;
 }
 
-
+.hidden {
+  background: green;
+}
 
 
 /*

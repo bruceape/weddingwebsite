@@ -1,17 +1,13 @@
 import Link from 'next/link'
 import styles from './navigation.module.css'
+import { Context } from './AppStateProvider'
+import React from 'react'
 
 
-function closeMenu() {
-	console.log('close menu')
-}
-
-
-function openMenu() {
-	console.log('open menu')
-}
 
 function Sheet({ currentPage, open }) {
+	const { state, closeMenu } = React.useContext(Context)
+
 	return (
 		<div 
 			className={`${styles.sheet} ${ open ? '' : styles.hidden}`}>
@@ -20,12 +16,12 @@ function Sheet({ currentPage, open }) {
 
 				<button 
 					className={styles.menuBtn}
-					onClick={openMenu}>
-					Open
+					onClick={closeMenu}>
+					Close
 				</button>
 			</div>
 
-			<ul className={styles.menuList}>
+			<ul className={styles.menuList} onClick={closeMenu}>
 				<li>
 					<Link href="/">
 						<a className={styles.menuLink}>Home</a>
@@ -62,6 +58,8 @@ function Sheet({ currentPage, open }) {
 }
 
 export default function Navigation({ currentPage }) {
+	const { state, openMenu } = React.useContext(Context)
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.header}>
@@ -70,14 +68,14 @@ export default function Navigation({ currentPage }) {
 				<button 
 					className={styles.menuBtn}
 					onClick={openMenu}>
-					Open
+					Menu
 				</button>
 			</div>
 
 
 			<Sheet
 				currentPage={currentPage}
-				open={false} />
+				open={state.menuOpen} />
 		</div>
 	)
 }

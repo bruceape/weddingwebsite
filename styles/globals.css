@@ -98,3 +98,9 @@ a {
   font-weight: 400;
   font-style: italic;
 }
+
+.locked {
+  background: blue;
+  overflow: hidden;
+  height:  100vh;
+}
