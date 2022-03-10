@@ -7,6 +7,7 @@ import React from 'react'
 
 function Sheet({ currentPage, open }) {
 	const { state, closeMenu } = React.useContext(Context)
+	const cl = state.menuOpen ? styles.menuBtnOpen : ''
 
 	return (
 		<div 
@@ -14,11 +15,12 @@ function Sheet({ currentPage, open }) {
 			<div className={styles.header}>
 				<h1 className={`${styles.heading} garamond-regular`}>{currentPage}</h1>
 
-				<button 
-					className={styles.menuBtn}
+{/*				<button 
+					className={`
+						${styles.menuBtn}
+					`}
 					onClick={closeMenu}>
-					Close
-				</button>
+				</button>*/}
 			</div>
 
 			<ul className={styles.menuList} onClick={closeMenu}>
@@ -58,7 +60,9 @@ function Sheet({ currentPage, open }) {
 }
 
 export default function Navigation({ currentPage }) {
-	const { state, openMenu } = React.useContext(Context)
+	const { state, openMenu, closeMenu } = React.useContext(Context)
+	const cl = state.menuOpen ? styles.menuBtnOpen : ''
+	const action = state.menuOpen ? closeMenu : openMenu
 
 	return (
 		<div className={styles.container}>
@@ -66,9 +70,11 @@ export default function Navigation({ currentPage }) {
 				<h1 className={`${styles.heading} garamond-regular`}>{currentPage}</h1>
 
 				<button 
-					className={styles.menuBtn}
-					onClick={openMenu}>
-					Menu
+					className={`
+						${styles.menuBtn}
+						${cl}
+					`}
+					onClick={action}>
 				</button>
 			</div>
 
