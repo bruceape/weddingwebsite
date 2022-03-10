@@ -28,6 +28,7 @@
 
 .menuBtn {
 	background: transparent;
+	top: -8px;
 	position: relative;
 	border: 0;
 	border-radius: 2px;
