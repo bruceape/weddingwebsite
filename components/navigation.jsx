@@ -40,7 +40,7 @@ function Sheet({ currentPage, open }) {
 					</Link>
 				</li>
 				<li>
-					<Link href="/registry">
+					<Link href="https://www.amazon.com/wedding/christina-glass-bruce-sullivan-san-francisco-may-2022/registry/26DZ9B91WPC3">
 						<a className={styles.menuLink}>Registry</a>
 					</Link>
 				</li>
