@@ -37,6 +37,7 @@
 
   .background {
     display: block;
+    border: 48px solid white;
     background: url('/us.jpg');
     background-size: cover;
     background-repeat: no-repeat;
