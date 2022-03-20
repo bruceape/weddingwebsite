@@ -11,12 +11,16 @@ export default function Home() {
     const modalOpen =  !state.menuOpen ? '' : 'locked'
     return (
       <div className= {`${styles.container} ${modalOpen}`}>
-        <HomeHeader />
-        <div className={styles.description}>
-          <HomeCeremony />
-          <HomeReception />
+        <div className={styles.content}>
+          <HomeHeader />
+          <div className={styles.description}>
+            <HomeCeremony />
+            <HomeReception />
+          </div>
+          <HomeNav />
         </div>
-        <HomeNav />
+        <div className={styles.background}>
+        </div>
       </div>
     )
 }
