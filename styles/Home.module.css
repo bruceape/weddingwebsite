@@ -18,8 +18,9 @@
 }
 
 .background {
-  /*background: blue;*/
+  display: none;
 }
+
 
 @media only screen and (min-width: 768px) { 
   .container {
@@ -32,6 +33,14 @@
   .content {
     background: white;
     padding: 104px 96px 124px;
+  }
+
+  .background {
+    display: block;
+    background: url('/us.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
