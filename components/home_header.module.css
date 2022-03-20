@@ -1,6 +1,8 @@
 
 .container {
-	/*background: red;*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .title {
@@ -10,13 +12,15 @@
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+	padding-bottom: 12px;
 }
 
-.name::before {
+/*.name::before {
 	content: "\a";
     white-space: pre;
 }
-
+*/
 .name {
 	font-size: 36px;
 	line-height: 48px;

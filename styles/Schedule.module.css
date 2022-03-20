@@ -9,10 +9,17 @@
   row-gap: 32px;
 }
 
+@media only screen and (min-width:  768px) {
+  .container {
+    padding: 104px 96px 124px;
+  }
+}
+
 .sectionList {
   /*background: blue;*/
   display: grid;
   row-gap: 128px;
+  max-width: 960px;
 }
 
 .section {
@@ -44,9 +51,24 @@
   row-gap: 24px;
 }
 
+@media only screen and (min-width: 768px) {
+  .item {
+    /*background: green;*/
+    grid-template-columns: 1fr 1fr;
+    column-gap: 96px;
+  }
+}
+
 .itemMeta {
   display: grid;
   row-gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .itemMeta {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .eventTitle {
