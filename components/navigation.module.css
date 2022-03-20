@@ -1,8 +1,25 @@
 
-.container {
+.mobileContainer {
 	/*background: orange;*/
 
 	/*padding: 48px 24px;*/
+	display: ;
+}
+
+@media only screen and (min-width: 768px) {
+	.mobileContainer {
+		display: none;
+	}
+}
+
+.desktopContainer {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.desktopContainer {
+		display: flex;
+	}
 }
 
 .locked {
@@ -130,6 +147,51 @@
 
 .menuLink:hover, .menuLink:active {
 	color: black;
+}
+
+
+.list {
+	display: grid;
+	row-gap: 9px;
+}
+
+
+.listItem {
+	/*background: white;*/
+}
+
+
+.link, .link:link, .link:visited {
+	/*background: red;*/
+	text-decoration: underline;
+
+	font-size: 14px;
+	line-height: 28px;
+
+	display: inline-block;
+	color: #595959;
+}
+
+.link:hover, .link:active {
+	/*background: blue;*/
+	color: black;
+}
+
+@media only screen and (min-width: 768px) {
+	.list {
+		/*background: blue;*/
+		display: flex;
+		/*justify-content: space-between;*/
+		flex-wrap: wrap;
+	}
+
+	.listItem {
+		padding-right: 32px;
+	}
+
+	.link, .link:link, .link:visited {
+		font-size: 16px;
+	}
 }
 
 

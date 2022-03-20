@@ -59,13 +59,13 @@ function Sheet({ currentPage, open }) {
 	)
 }
 
-export default function Navigation({ currentPage }) {
+function MobileNav({ currentPage }) {
 	const { state, openMenu, closeMenu } = React.useContext(Context)
 	const cl = state.menuOpen ? styles.menuBtnOpen : ''
 	const action = state.menuOpen ? closeMenu : openMenu
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.mobileContainer}>
 			<div className={styles.header}>
 				<h1 className={`${styles.heading} garamond-regular`}>{currentPage}</h1>
 
@@ -82,6 +82,57 @@ export default function Navigation({ currentPage }) {
 			<Sheet
 				currentPage={currentPage}
 				open={state.menuOpen} />
+		</div>
+	)
+}
+
+function DesktopNav({ currentPage }) {
+	return (
+		<div className={styles.desktopContainer}>
+			<h1 className={`${styles.heading} garamond-regular`}>{currentPage}</h1>
+			<ul className={styles.list}>
+				<li className={styles.listItem}>
+					<Link href="/">
+						<a className={`${styles.link} neue-haas-regular`}>
+							Home
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="/schedule">
+						<a className={`${styles.link} neue-haas-regular`}>
+							Schedule
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="/watch">
+						<a className={`${styles.link} neue-haas-regular`}>
+							Watch Live
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="https://www.amazon.com/wedding/christina-glass-bruce-sullivan-san-francisco-may-2022/registry/26DZ9B91WPC3">
+						<a className={`${styles.link} neue-haas-regular`}>
+							Registry
+						</a>
+					</Link>
+				</li>
+			</ul>
+		</div>
+	)
+}
+
+export default function Navigation({ currentPage }) {
+	const { state, openMenu, closeMenu } = React.useContext(Context)
+	const cl = state.menuOpen ? styles.menuBtnOpen : ''
+	const action = state.menuOpen ? closeMenu : openMenu
+
+	return (
+		<div className={styles.container}>
+			<MobileNav currentPage={currentPage} />
+			<DesktopNav currentPage={currentPage} />
 		</div>
 	)
 }

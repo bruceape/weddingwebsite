@@ -41,6 +41,13 @@
   letter-spacing: 0.06em;
 }
 
+@media only screen and (min-width:  768px) {
+  .sectionTitle {
+    font-size: 21px;
+    line-height: normal;
+  }
+}
+
 .itemContainer {
   display: grid;
   row-gap: 48px;
