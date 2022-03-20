@@ -156,8 +156,8 @@ const schedule = [{
     }, {
       title: 'Bride & groom arrive',
       time: '6:45 - 7:00 PM',
-      description: 'Mingling and photo taking with guests.',
-      detailsDescription: 'Getting to the ceremony site is tricky, so please let us know if you would like to carpool with one of us. \n We will film the rehearsal so that anyone who is unable to attend will have a sense of layout and timing. ',
+      description: '',
+      detailsDescription: 'Mingling and photo taking with guests.',
       details: []
     }, {
       title: 'Dinner starts',
