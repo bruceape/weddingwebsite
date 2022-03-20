@@ -35,7 +35,7 @@ function Sheet({ currentPage, open }) {
 					</Link>
 				</li>
 				<li>
-					<Link href="/watch">
+					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
 						<a className={styles.menuLink}>Watch Live</a>
 					</Link>
 				</li>
@@ -106,7 +106,7 @@ function DesktopNav({ currentPage }) {
 					</Link>
 				</li>
 				<li className={styles.listItem}>
-					<Link href="/watch">
+					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Watch Live
 						</a>

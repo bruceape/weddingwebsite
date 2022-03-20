@@ -14,7 +14,7 @@ export default function HomeNav({ children }) {
 					</Link>
 				</li>
 				<li className={styles.listItem}>
-					<Link href="/watch">
+					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Watch Live
 						</a>
