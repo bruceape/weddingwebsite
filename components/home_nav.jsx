@@ -27,6 +27,14 @@ export default function HomeNav({ children }) {
 						</a>
 					</Link>
 				</li>
+				<li className={styles.listItem}>
+					<Link href="https://airtable.com/shrk3PkNmTKhtv2Qw">
+						<a className={`${styles.link} neue-haas-regular`}>
+							RSVP
+						</a>
+					</Link>
+				</li>
+
 {/*				<li className={styles.listItem}>
 					<Link href="/todo">
 						<a className={`${styles.link} neue-haas-regular`}>

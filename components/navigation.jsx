@@ -44,6 +44,11 @@ function Sheet({ currentPage, open }) {
 						<a className={styles.menuLink}>Registry</a>
 					</Link>
 				</li>
+				<li>
+					<Link href="https://airtable.com/shrk3PkNmTKhtv2Qw">
+						<a className={styles.menuLink}>RSVP</a>
+					</Link>
+				</li>
 {/*				<li>
 					<Link href="/todo">
 						<a className={styles.menuLink}>SF to do List</a>
@@ -116,6 +121,13 @@ function DesktopNav({ currentPage }) {
 					<Link href="https://www.amazon.com/wedding/christina-glass-bruce-sullivan-san-francisco-may-2022/registry/26DZ9B91WPC3">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Registry
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="https://airtable.com/shrk3PkNmTKhtv2Qw">
+						<a className={`${styles.link} neue-haas-regular`}>
+							RSVP
 						</a>
 					</Link>
 				</li>
