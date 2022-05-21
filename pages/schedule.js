@@ -123,7 +123,7 @@ const schedule = [{
         {title: 'Parking', content: 'There will be parking at Battery Alexander and Bonita Lighthouse '}
     ]}, {
       title: 'Guests arrive',
-      time: '3:00 - 3:30 PM',
+      time: '3:00-3:15 PM',
       description: 'The rest of the party arrives.',
       detailsDescription: 'We will be asking all guests to take a covid test when they arrive and before taking off their masks. Thank you for making this day so much more safer for everyone. ',
       details: [
@@ -131,13 +131,13 @@ const schedule = [{
         {title: 'Parking', content: 'There will be parking at Battery Alexander and Bonita Lighthouse '}
     ]}, {
       title: 'Wedding begins',
-      time: '3:30 - 3:45 PM',
+      time: '3:15 - 3:35 PM',
       description: 'Wedding procession starts. ',
       detailsDescription: 'This will be live streamed via Youtube, for all those unable to attend. ',
       details: []
     }, {
       title: 'Group photo',
-      time: '4:00 PM',
+      time: '3:45 PM',
       description: 'Everyone congregates for group photo. ',
       detailsDescription: 'If you feel unsafe to take group photo, no worries, we totally understand. ',
       details: []
@@ -161,7 +161,7 @@ const schedule = [{
       details: []
     }, {
       title: 'Dinner starts',
-      time: '7:30 PM',
+      time: '7:00 PM',
       description: 'It’s amazing food—biggest reason why we got this place. ',
       detailsDescription: 'Enjoy the food and drinks! The menu is seasonal, so we\'ll provide more details as the menu gets developed. ',
       details: []
@@ -188,7 +188,7 @@ export default function Schedule() {
     return (
       <div className={`${styles.container} ${modalOpen}`}>
         <Navigation currentPage="Schedule & Details" />
-        <div className={styles.note}> Note: This schedule is a WIP and subject to change. </div>
+        {/*<div className={styles.note}> Note: This schedule is a WIP and subject to change. </div>*/}
         <div className={styles.sectionList}>
           {schedule.map((a) => <Section key={a.title} data={a} />)}
         </div>
