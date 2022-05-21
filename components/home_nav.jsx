@@ -14,7 +14,7 @@ export default function HomeNav({ children }) {
 					</Link>
 				</li>
 				<li className={styles.listItem}>
-					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
+					<Link href="https://www.instagram.com/bruceandchristina/?igshid=YmMyMTA2M2Y=">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Watch Live
 						</a>
@@ -35,20 +35,20 @@ export default function HomeNav({ children }) {
 					</Link>
 				</li>
 
-{/*				<li className={styles.listItem}>
-					<Link href="/todo">
+				<li className={styles.listItem}>
+					<Link href="https://www.notion.so/christinaglass/Our-SF-List-6551accdad834d53b5805a3cd0b9cf01">
 						<a className={`${styles.link} neue-haas-regular`}>
 							SF to do List
 						</a>
 					</Link>
-				</li>*/}
-{/*				<li className={styles.listItem}>
-					<Link href="/guestbook">
+				</li>
+				<li className={styles.listItem}>
+					<Link href="https://airtable.com/shrLe9EkseXJxdS6T">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Guestbook
 						</a>
 					</Link>
-				</li>*/}
+				</li>
 			</ul>
 		</div>
 	)

@@ -35,7 +35,7 @@ function Sheet({ currentPage, open }) {
 					</Link>
 				</li>
 				<li>
-					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
+					<Link href="https://www.instagram.com/bruceandchristina/?igshid=YmMyMTA2M2Y=">
 						<a className={styles.menuLink}>Watch Live</a>
 					</Link>
 				</li>
@@ -49,16 +49,16 @@ function Sheet({ currentPage, open }) {
 						<a className={styles.menuLink}>RSVP</a>
 					</Link>
 				</li>
-{/*				<li>
-					<Link href="/todo">
+				<li>
+					<Link href="https://www.notion.so/christinaglass/Our-SF-List-6551accdad834d53b5805a3cd0b9cf01">
 						<a className={styles.menuLink}>SF to do List</a>
 					</Link>
 				</li>
 				<li>
-					<Link href="/guestbook">
+					<Link href="https://airtable.com/shrLe9EkseXJxdS6T">
 						<a className={styles.menuLink}>Guestbook</a>
 					</Link>
-				</li>*/}
+				</li>
 			</ul>
 		</div>
 	)
@@ -111,7 +111,7 @@ function DesktopNav({ currentPage }) {
 					</Link>
 				</li>
 				<li className={styles.listItem}>
-					<Link href="https://www.youtube.com/watch?v=3hDS1v2xbjY">
+					<Link href="https://www.instagram.com/bruceandchristina/?igshid=YmMyMTA2M2Y=">
 						<a className={`${styles.link} neue-haas-regular`}>
 							Watch Live
 						</a>
@@ -128,6 +128,20 @@ function DesktopNav({ currentPage }) {
 					<Link href="https://airtable.com/shrk3PkNmTKhtv2Qw">
 						<a className={`${styles.link} neue-haas-regular`}>
 							RSVP
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="https://www.notion.so/christinaglass/Our-SF-List-6551accdad834d53b5805a3cd0b9cf01">
+						<a className={`${styles.link} neue-haas-regular`}>
+							SF to do List
+						</a>
+					</Link>
+				</li>
+				<li className={styles.listItem}>
+					<Link href="https://airtable.com/shrLe9EkseXJxdS6T">
+						<a className={`${styles.link} neue-haas-regular`}>
+							Guestbook
 						</a>
 					</Link>
 				</li>
